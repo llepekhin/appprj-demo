@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<SCADA>
+    <!--
+    This is the SCADA configuration file.
+    -->
+    <station id="Server">
+	<prm id="DefTarget">10</prm>
+	<prm id="MessTargets">0:Отладка:10;1:Информация:10;2:Замечание:0;3:Предупреждение:10;4:Ошибка:10;5:Критический:10;6:Тревога:10;7:Авария:10;</prm>
+	<!--
+	Discribe internal parameter for station".
+	Station this SCADA programm.
+	-->
+	<prm id="StName">Server</prm>
+	<prm id="WorkDB">SQLite.GenDB</prm>
+	<prm id="Workdir">%WDIR%</prm>
+	<prm id="IcoDir">./icons</prm>
+	<prm id="ModDir">%MDIR%</prm>
+	<prm id="LogTarget">10</prm>
+	<prm id="MessLev">0</prm>
+	<prm id="Lang2CodeBase" />
+	<prm id="SaveAtExit">0</prm>
+	<prm id="SavePeriod">0</prm>
+	<node id="sub_BD">
+	    <prm id="SYSStPref">0</prm>
+	    <tbl id="DB">
+	        <fld ID="GenDB" TYPE="SQLite" NAME="Main DB" ADDR="./data/demo/MainSt.db" CODEPAGE="UTF-8" />
+	        <fld ID="RNF_wdg" TYPE="PostgreSQL" ADDR=";127.0.0.1;postgres;00ghbdtn00;RNF_wdg" CODEPAGE="UTF-8" EN="1" />
+	        <fld ID="UPN276_prj" TYPE="PostgreSQL" ADDR=";127.0.0.1;postgres;00ghbdtn00;UPN276_prj" CODEPAGE="UTF-8" EN="1" />
+	        <fld ID="NT_tmp" TYPE="SQLite" ADDR="./data/demo/NT_tmp.db" CODEPAGE="UTF-8" EN="1" />
+	        <fld ID="TemplatesGates" TYPE="SQLite" ADDR="./data/demo/TemplatesGates.db" CODEPAGE="UTF-8" EN="1" />
+	        <fld ID="SystemTPTS" TYPE="SQLite" ADDR="./data/demo/SystemTPTS.db" CODEPAGE="UTF-8" EN="1" />
+	        <fld ID="INFO" TYPE="SQLite" ADDR="./data/demo/INFO.db" CODEPAGE="UTF-8" EN="1" />
+	        <fld ID="Protocol" TYPE="SQLite" ADDR="./data/demo/Protocol.db" CODEPAGE="UTF-8" EN="1" />
+	        <fld ID="ProjectBase" TYPE="SQLite" ADDR="./data/demo/ProjectBase.db" CODEPAGE="UTF-8" EN="1" />
+	        <fld ID="UPN276_prm" TYPE="PostgreSQL" ADDR=";127.0.0.1;postgres;00ghbdtn00;UPN276_prm" CODEPAGE="UTF-8" EN="1" />
+	        <fld ID="Service" TYPE="PostgreSQL" ADDR=";127.0.0.1;postgres;00ghbdtn00;Service" CODEPAGE="UTF-8" EN="1" />
+	        <fld ID="ArchRNF" TYPE="PostgreSQL" ADDR=";127.0.0.1;postgres;00ghbdtn00;ArchRNF" CODEPAGE="UTF-8" EN="1" />
+	        <fld ID="adku" TYPE="PostgreSQL" NAME="adku" ADDR=";127.0.0.1;postgres;00ghbdtn00;adku" CODEPAGE="UTF-8" EN="1" />
+	        <fld ID="ArchMess" TYPE="PostgreSQL" NAME="ArchMess" ADDR=";127.0.0.1;postgres;00ghbdtn00;ArchMess" CODEPAGE="UTF-8" EN="1" />
+
+
+	    </tbl>
+	</node>
+	<node id="sub_Security">
+	</node>
+	<node id="sub_ModSched">
+	    <prm id="ModAllow">*</prm>
+	    <prm id="ModDeny" />
+	    <prm id="ChkPer">0</prm>
+	</node>
+	<node id="sub_Transport">
+	    <prm id="ExtTansp" />
+	    <tbl id="Transport_in">
+	    </tbl>
+	</node>
+	<node id="sub_DAQ">
+	</node>
+	<node id="sub_Archive">
+	    <prm id="MessBufSize">1000</prm>
+	    <prm id="MessPeriod">5</prm>
+	    <prm id="ValPeriod">1000</prm>
+	    <prm id="ValPriority">10</prm>
+	</node>
+	<node id="sub_UI">
+	    <node id="mod_QTStarter">
+	        <prm id="StartMod">QTCfg</prm>
+	    </node>
+	    <node id="mod_WebCfg">
+	        <prm id="SessTimeLife">20</prm>
+	    </node>
+	</node>
+    </station>
+</SCADA>

@@ -1,0 +1,209 @@
+#!/usr/bin/perl
+################################################################################
+# File            : configure
+# Author          : Igor Lepekhin
+# Created On      : Пт ноя 24 13:26:25 MSK 2023
+# Description     : Настройка прикладного проекта
+################################################################################
+
+#########
+# ru: вывод на экран параметров командной строки
+#########
+sub print_usage
+{
+    print "configure [-i][-u][-b] [--bin <name>] [--directory <dir>] [--prj_dir <dir>] [--prj_name <name>]", "\n";
+    exit;
+}
+
+#########
+# ru: глобальные переменные
+#########
+my $ACT		= 'i';			# ru: действие ('i' - установить, 'u' - удалить, 'b' - резервная копия)
+my $DIR		= '../..';
+my $PRJ_DIR	= '';		# ru: директория
+my $PRJ_NME	= '';
+my $BIN		= "asoft";
+
+#########
+# ru: обработка параметров командной строки
+#########
+for(my $i=0;$i<scalar(@ARGV);$i++) {
+    SWITCH : {
+    # ru: установить
+        if($ARGV[$i] eq "-i")
+	{
+	    $ACT = 'i';
+	    next;
+	}
+    # ru: удалить
+        if($ARGV[$i] eq "-u")
+	{
+	    $ACT = 'u';
+	    next;
+	}
+    # ru: резервная копия
+        if($ARGV[$i] eq "-b")
+	{
+	    $ACT = 'b';
+	    next;
+	}
+    # ru: имя исполняемого файла
+        if($ARGV[$i] eq "--bin")
+	{
+	    $i++; $BIN = $ARGV[$i];
+	    next;
+	}
+    # ru: директория
+        if($ARGV[$i] eq "--dir")
+	{
+	    $i++; $DIR = $ARGV[$i];
+	    next;
+	}
+    # ru: директория прикладного проекта
+        if($ARGV[$i] eq "--prj_dir")
+	{
+	    $i++; $PRJ_DIR = $ARGV[$i];
+	    next;
+	}
+    # ru: имя  прикладного проекта
+        if($ARGV[$i] eq "--prj_name")
+	{
+	    $i++; $PRJ_NME = $ARGV[$i];
+	    next;
+	}
+    # ru: справка
+        if($ARGV[$i] eq "-h")
+	{
+		print_usage();
+		last SWITCH;
+	}
+    # ru: справка
+	print_usage();
+    }
+}
+
+use Cwd qw(abs_path);
+
+$DIR = abs_path($DIR);
+
+my %CFG = (
+    "%DIR%"  => "$DIR",
+    "%WDIR%" => "$DIR/share",
+    "%MDIR%" => "$DIR/lib",
+    "%CDIR%" => "$DIR/etc",
+    "%LDIR%" => "$DIR/lib",
+    "%NAME%" => "$BIN"
+);
+
+use File::Basename;
+
+$PRJ_DIR = abs_path($PRJ_DIR);
+($PRJ_NME) = File::Basename::fileparse($PRJ_DIR) if(!length($PRJ_NME));
+
+sub generate_file
+{
+    my $file_name = shift;
+    my $tmpl_name = shift;
+    my $cfg_hash_ref = shift;
+    my $message = shift || 'make';
+
+    print $message." $file_name from $tmpl_name", "\n";
+    open(I_FILE, '<'.$tmpl_name) or die "error: can't open $tmpl_name: $!"; my @tmpl_data = <I_FILE>; close(I_FILE);
+    open(O_FILE, '>'.$file_name) or die "error: can't open $tmpl_name: $!";
+    foreach my $str (@tmpl_data)
+    {
+	foreach(keys %{$cfg_hash_ref})
+	{
+	    $str =~ s/$_/$cfg_hash_ref->{$_}/g;
+	}
+	print O_FILE $str;
+    }
+    close(O_FILE);
+
+    return $file_name;
+}
+
+if($ACT eq 'i')
+{
+    print "install application project \'$PRJ_NME\' to directory \'$DIR\'...", "\n";
+
+    $DATA_DIR = $DIR.'/share/data/'.$PRJ_NME;
+    if((-d $DATA_DIR))
+    {
+	die "error: application project \'$PRJ_NME\' already installed, uninstall it first", "\n";
+    }
+    {
+	system("mkdir -p ".$DATA_DIR);
+	print "copy sqlite database files...", "\n";
+	opendir(PDIR, $PRJ_DIR.'/share/data'); my @sqlite = grep(!/^\.+$/ && /\.db/, readdir(PDIR)); closedir(PDIR);
+	foreach(@sqlite)
+	{
+	    print $_, "\n";
+	    system("cp -f $PRJ_DIR/share/data/$_ $DATA_DIR");
+	}
+	print "restore pgsql database...", "\n";
+	opendir(PDIR, $PRJ_DIR.'/share/data'); my @pgsql = grep(!/^\.+$/ && /\.backup/, readdir(PDIR)); closedir(PDIR);
+	foreach(@pgsql)
+	{
+	    print $PRJ_DIR.'/share/data/'.$_, "\n";
+	    my ($name) = fileparse($PRJ_DIR.'/share/data/'.$_, qr/\.[^.]*/);
+	    print $name, "\n";
+	    $res = system("sudo -u postgres createdb $name");
+	    if($res != 0)
+	    {
+		die "error: database \'$name\' already exist, uninstall aplication project \'$PRJ_NME\' first", "\n";
+	    }
+	    system("sudo -u postgres pg_restore -U postgres -Fc -d $name $PRJ_DIR/share/data/$_ -v");
+	}
+    }
+
+    generate_file($DIR.'/etc/scada_'.$PRJ_NME.'.xml', 'etc/scada_'.$PRJ_NME.'.xml.template', \%CFG);
+
+    my %CFG1 = %CFG; $CFG1{'%CFG%'} = 'scada_'.$PRJ_NME.'.xml';
+    $O_FILE = generate_file($DIR.'/start.'.$PRJ_NME, 'start.template', \%CFG1);
+    system("chmod +x $O_FILE");
+}
+
+if($ACT eq 'u')
+{
+    print "uninstall application project \'$PRJ_NME\' from directory \'$DIR\'...", "\n";
+
+    $DATA_DIR = $DIR.'/share/data/'.$PRJ_NME;
+
+    print "drop pgsql database...", "\n";
+    opendir(PDIR, $PRJ_DIR.'/share/data'); my @pgsql = grep(!/^\.+$/ && /\.backup/, readdir(PDIR)); closedir(PDIR);
+    foreach(@pgsql)
+    {
+	my ($name) = fileparse($PRJ_DIR.'/share/data/'.$_, qr/\.[^.]*/);
+	print $name, "\n";
+	system("sudo -u postgres dropdb $name");
+    }
+    print "remove sqlite database files...", "\n";
+    system("rm -rf $DATA_DIR");
+
+    print "remove project files...", "\n";
+    system('rm -f '.$DIR.'/etc/scada_'.$PRJ_NME.'.xml');
+    system('rm -f '.$DIR.'/start.'.$PRJ_NME);
+}
+
+if($ACT eq 'b')
+{
+    print "backup databases for application project \'$PRJ_NME\'...", "\n";
+
+    $DATA_DIR_C = $DIR.'/share/data/'.$PRJ_NME;
+    $DATA_DIR_B = $PRJ_DIR.'/backup/data/';
+
+    system("mkdir -p $DATA_DIR_B");
+
+    print "backup pgsql database...", "\n";
+    opendir(PDIR, $PRJ_DIR.'/share/data'); my @pgsql = grep(!/^\.+$/ && /\.backup/, readdir(PDIR)); closedir(PDIR);
+    foreach(@pgsql)
+    {
+	my ($name) = fileparse($PRJ_DIR.'/share/data/'.$_, qr/\.[^.]*/);
+	print $name, "\n";
+	system("sudo -u postgres pg_dump --user postgres --format custom --blobs --verbose --file /tmp/$name.backup $name");
+	system("sudo mv -f /tmp/$name.backup $DATA_DIR_B");
+    }
+    print "backup sqlite database files...", "\n";
+    system("cp -f $DATA_DIR_C/* $DATA_DIR_B");
+}

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+bin/%NAME% --Config=%CDIR%/%CFG%
