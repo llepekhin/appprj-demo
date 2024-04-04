@@ -1,7 +1,7 @@
 <Servers>
 	<Server>
 		<Name>Сервер</Name>
-		<Port>502</Port>
+		<Port>10002</Port>
 		<Desc>
 		</Desc>
 		<Mode>true</Mode>
@@ -32,145 +32,7 @@
 				</Items>
 			</Groups>
 			<Register>
-				<Name>Reg_1</Name>
-				<Addr>1</Addr>
-				<BitAddr>0</BitAddr>
-				<vType>18</vType>
-				<Description>
-				</Description>
-				<mSpace>0</mSpace>
-				<ConstGroupName>
-				</ConstGroupName>
-				<Group>
-				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
-				<DataFormat>2</DataFormat>
-				<Percent>0</Percent>
-				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_1</RegFullName>
-				<RegsCount>1</RegsCount>
-				<Value>1</Value>
-				<DefValue>0</DefValue>
-			</Register>
-			<Register>
-				<Name>Reg_3</Name>
-				<Addr>3</Addr>
-				<BitAddr>0</BitAddr>
-				<vType>18</vType>
-				<Description>
-				</Description>
-				<mSpace>0</mSpace>
-				<ConstGroupName>
-				</ConstGroupName>
-				<Group>
-				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
-				<DataFormat>2</DataFormat>
-				<Percent>0</Percent>
-				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_3</RegFullName>
-				<RegsCount>1</RegsCount>
-				<Value>0</Value>
-				<DefValue>0</DefValue>
-			</Register>
-			<Register>
-				<Name>Reg_2</Name>
-				<Addr>2</Addr>
-				<BitAddr>0</BitAddr>
-				<vType>18</vType>
-				<Description>
-				</Description>
-				<mSpace>0</mSpace>
-				<ConstGroupName>
-				</ConstGroupName>
-				<Group>
-				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
-				<DataFormat>2</DataFormat>
-				<Percent>0</Percent>
-				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_2</RegFullName>
-				<RegsCount>1</RegsCount>
-				<Value>0</Value>
-				<DefValue>0</DefValue>
-			</Register>
-			<Register>
-				<Name>Reg_4</Name>
-				<Addr>4</Addr>
-				<BitAddr>0</BitAddr>
-				<vType>18</vType>
-				<Description>
-				</Description>
-				<mSpace>0</mSpace>
-				<ConstGroupName>
-				</ConstGroupName>
-				<Group>
-				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
-				<DataFormat>2</DataFormat>
-				<Percent>0</Percent>
-				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_4</RegFullName>
-				<RegsCount>1</RegsCount>
-				<Value>1</Value>
-				<DefValue>0</DefValue>
-			</Register>
-			<Register>
-				<Name>Reg_5</Name>
-				<Addr>5</Addr>
-				<BitAddr>0</BitAddr>
-				<vType>18</vType>
-				<Description>
-				</Description>
-				<mSpace>0</mSpace>
-				<ConstGroupName>
-				</ConstGroupName>
-				<Group>
-				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
-				<DataFormat>2</DataFormat>
-				<Percent>0</Percent>
-				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_5</RegFullName>
-				<RegsCount>1</RegsCount>
-				<Value>1</Value>
-				<DefValue>0</DefValue>
-			</Register>
-			<Register>
-				<Name>Reg_6</Name>
-				<Addr>6</Addr>
-				<BitAddr>0</BitAddr>
-				<vType>18</vType>
-				<Description>
-				</Description>
-				<mSpace>0</mSpace>
-				<ConstGroupName>
-				</ConstGroupName>
-				<Group>
-				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
-				<DataFormat>2</DataFormat>
-				<Percent>0</Percent>
-				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_6</RegFullName>
-				<RegsCount>1</RegsCount>
-				<Value>0</Value>
-				<DefValue>0</DefValue>
-			</Register>
-			<Register>
-				<Name>Reg_7</Name>
+				<Name>LCV_03.State</Name>
 				<Addr>7</Addr>
 				<BitAddr>0</BitAddr>
 				<vType>18</vType>
@@ -187,13 +49,13 @@
 				<DataFormat>2</DataFormat>
 				<Percent>0</Percent>
 				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_7</RegFullName>
+				<RegFullName>Сервер.Устройство.LCV_03.State</RegFullName>
 				<RegsCount>1</RegsCount>
-				<Value>0</Value>
+				<Value>1</Value>
 				<DefValue>0</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_8</Name>
+				<Name>LCV_03.State_alm</Name>
 				<Addr>8</Addr>
 				<BitAddr>0</BitAddr>
 				<vType>18</vType>
@@ -210,13 +72,13 @@
 				<DataFormat>2</DataFormat>
 				<Percent>0</Percent>
 				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_8</RegFullName>
+				<RegFullName>Сервер.Устройство.LCV_03.State_alm</RegFullName>
 				<RegsCount>1</RegsCount>
-				<Value>1</Value>
+				<Value>0</Value>
 				<DefValue>0</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_9</Name>
+				<Name>LCV_03.State_nu</Name>
 				<Addr>9</Addr>
 				<BitAddr>0</BitAddr>
 				<vType>18</vType>
@@ -233,85 +95,205 @@
 				<DataFormat>2</DataFormat>
 				<Percent>0</Percent>
 				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_9</RegFullName>
-				<RegsCount>1</RegsCount>
-				<Value>1</Value>
-				<DefValue>0</DefValue>
-			</Register>
-			<Register>
-				<Name>Reg_10</Name>
-				<Addr>10</Addr>
-				<BitAddr>0</BitAddr>
-				<vType>18</vType>
-				<Description>
-				</Description>
-				<mSpace>0</mSpace>
-				<ConstGroupName>
-				</ConstGroupName>
-				<Group>
-				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
-				<DataFormat>2</DataFormat>
-				<Percent>0</Percent>
-				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_10</RegFullName>
-				<RegsCount>1</RegsCount>
-				<Value>1</Value>
-				<DefValue>0</DefValue>
-			</Register>
-			<Register>
-				<Name>Reg_11</Name>
-				<Addr>11</Addr>
-				<BitAddr>0</BitAddr>
-				<vType>18</vType>
-				<Description>
-				</Description>
-				<mSpace>0</mSpace>
-				<ConstGroupName>
-				</ConstGroupName>
-				<Group>
-				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
-				<DataFormat>2</DataFormat>
-				<Percent>0</Percent>
-				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_11</RegFullName>
-				<RegsCount>1</RegsCount>
-				<Value>1</Value>
-				<DefValue>0</DefValue>
-			</Register>
-			<Register>
-				<Name>Reg_12</Name>
-				<Addr>12</Addr>
-				<BitAddr>0</BitAddr>
-				<vType>18</vType>
-				<Description>
-				</Description>
-				<mSpace>0</mSpace>
-				<ConstGroupName>
-				</ConstGroupName>
-				<Group>
-				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
-				<DataFormat>2</DataFormat>
-				<Percent>0</Percent>
-				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_12</RegFullName>
+				<RegFullName>Сервер.Устройство.LCV_03.State_nu</RegFullName>
 				<RegsCount>1</RegsCount>
 				<Value>0</Value>
 				<DefValue>0</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_13</Name>
-				<Addr>13</Addr>
+				<Name>NGSV1.Temp.Hyst</Name>
+				<Addr>52</Addr>
 				<BitAddr>0</BitAddr>
-				<vType>18</vType>
+				<vType>4</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.Hyst</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>6</Value>
+				<DefValue>6</DefValue>
+			</Register>
+			<Register>
+				<Name>NGSV1.Temp.CoeffT</Name>
+				<Addr>50</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>4</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.CoeffT</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>1.33299994468689</Value>
+				<DefValue>1,333</DefValue>
+			</Register>
+			<Register>
+				<Name>NGSV1.Temp.Imit</Name>
+				<Addr>54</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>4</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.Imit</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>64</Value>
+				<DefValue>64</DefValue>
+			</Register>
+			<Register>
+				<Name>NGSV1.Temp.MaxEng</Name>
+				<Addr>56</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>4</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.MaxEng</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>75.5500030517578</Value>
+				<DefValue>75,55</DefValue>
+			</Register>
+			<Register>
+				<Name>NGSV1.Temp.MinEng</Name>
+				<Addr>58</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>4</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.MinEng</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>1.99000000953674</Value>
+				<DefValue>1,99</DefValue>
+			</Register>
+			<Register>
+				<Name>NGSV1.Temp.MinSens</Name>
+				<Addr>62</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>4</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.MinSens</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>1.25</Value>
+				<DefValue>1,25</DefValue>
+			</Register>
+			<Register>
+				<Name>NGSV1.Temp.MaxSens</Name>
+				<Addr>60</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>4</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.MaxSens</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>12.3299999237061</Value>
+				<DefValue>12,33</DefValue>
+			</Register>
+			<Register>
+				<Name>NGSV1.Temp.MaxObkz</Name>
+				<Addr>64</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>4</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.MaxObkz</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>70.5</Value>
+				<DefValue>70,5</DefValue>
+			</Register>
+			<Register>
+				<Name>NGSV1.Temp.MinObkz</Name>
+				<Addr>66</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>4</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.MinObkz</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>1.23000001907349</Value>
+				<DefValue>1,23</DefValue>
+			</Register>
+			<Register>
+				<Name>LCV_03.cmd</Name>
+				<Addr>1035</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>2</vType>
 				<Description>
 				</Description>
 				<mSpace>0</mSpace>
@@ -320,21 +302,21 @@
 				<Group>
 				</Group>
 				<Min>0</Min>
-				<Max>1</Max>
+				<Max>50</Max>
 				<WorkType>1</WorkType>
 				<DataFormat>2</DataFormat>
 				<Percent>0</Percent>
-				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_13</RegFullName>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.cmd</RegFullName>
 				<RegsCount>1</RegsCount>
-				<Value>0</Value>
+				<Value>30</Value>
 				<DefValue>0</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_14</Name>
-				<Addr>14</Addr>
+				<Name>LCV_03.UST2</Name>
+				<Addr>1037</Addr>
 				<BitAddr>0</BitAddr>
-				<vType>18</vType>
+				<vType>2</vType>
 				<Description>
 				</Description>
 				<mSpace>0</mSpace>
@@ -342,22 +324,41 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
+				<WorkType>2</WorkType>
 				<DataFormat>2</DataFormat>
 				<Percent>0</Percent>
-				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_14</RegFullName>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.UST2</RegFullName>
+				<RegsCount>1</RegsCount>
+				<Value>2</Value>
+				<DefValue>2</DefValue>
+			</Register>
+			<Register>
+				<Name>LCV_03.UST1</Name>
+				<Addr>1036</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>2</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>2</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.UST1</RegFullName>
 				<RegsCount>1</RegsCount>
 				<Value>1</Value>
-				<DefValue>0</DefValue>
+				<DefValue>1</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_15</Name>
-				<Addr>15</Addr>
+				<Name>LCV_03.UST4</Name>
+				<Addr>1039</Addr>
 				<BitAddr>0</BitAddr>
-				<vType>18</vType>
+				<vType>2</vType>
 				<Description>
 				</Description>
 				<mSpace>0</mSpace>
@@ -365,22 +366,20 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
-				<DataFormat>2</DataFormat>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
 				<Percent>0</Percent>
-				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_15</RegFullName>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.UST4</RegFullName>
 				<RegsCount>1</RegsCount>
-				<Value>0</Value>
-				<DefValue>0</DefValue>
+				<Value>4</Value>
+				<DefValue>4</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_16</Name>
-				<Addr>16</Addr>
+				<Name>LCV_03.UST5</Name>
+				<Addr>1040</Addr>
 				<BitAddr>0</BitAddr>
-				<vType>18</vType>
+				<vType>2</vType>
 				<Description>
 				</Description>
 				<mSpace>0</mSpace>
@@ -388,20 +387,291 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.UST5</RegFullName>
+				<RegsCount>1</RegsCount>
+				<Value>5</Value>
+				<DefValue>5</DefValue>
+			</Register>
+			<Register>
+				<Name>LCV_03.UST6</Name>
+				<Addr>1041</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>2</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
 				<DataFormat>2</DataFormat>
 				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.UST6</RegFullName>
+				<RegsCount>1</RegsCount>
+				<Value>6</Value>
+				<DefValue>6</DefValue>
+			</Register>
+			<Register>
+				<Name>LCV_03.UST7</Name>
+				<Addr>1042</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>2</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>2</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.UST7</RegFullName>
+				<RegsCount>1</RegsCount>
+				<Value>7</Value>
+				<DefValue>7</DefValue>
+			</Register>
+			<Register>
+				<Name>LCV_03.UST8</Name>
+				<Addr>1043</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>2</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.UST8</RegFullName>
+				<RegsCount>1</RegsCount>
+				<Value>8</Value>
+				<DefValue>8</DefValue>
+			</Register>
+			<Register>
+				<Name>LCV_03.UST9</Name>
+				<Addr>1044</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>2</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.UST9</RegFullName>
+				<RegsCount>1</RegsCount>
+				<Value>9</Value>
+				<DefValue>9</DefValue>
+			</Register>
+			<Register>
+				<Name>LCV_03.UST10</Name>
+				<Addr>1045</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>2</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.UST10</RegFullName>
+				<RegsCount>1</RegsCount>
+				<Value>10</Value>
+				<DefValue>10</DefValue>
+			</Register>
+			<Register>
+				<Name>LCV_03.UST11</Name>
+				<Addr>1046</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>2</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.UST11</RegFullName>
+				<RegsCount>1</RegsCount>
+				<Value>11</Value>
+				<DefValue>11</DefValue>
+			</Register>
+			<Register>
+				<Name>LCV_03.UST12</Name>
+				<Addr>1047</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>2</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.UST12</RegFullName>
+				<RegsCount>1</RegsCount>
+				<Value>12</Value>
+				<DefValue>12</DefValue>
+			</Register>
+			<Register>
+				<Name>LCV_03.UST13</Name>
+				<Addr>1048</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>2</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.UST13</RegFullName>
+				<RegsCount>1</RegsCount>
+				<Value>13</Value>
+				<DefValue>13</DefValue>
+			</Register>
+			<Register>
+				<Name>LCV_03.UST14</Name>
+				<Addr>1049</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>2</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
 				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_16</RegFullName>
+				<RegFullName>Сервер.Устройство.LCV_03.UST14</RegFullName>
+				<RegsCount>1</RegsCount>
+				<Value>14</Value>
+				<DefValue>14</DefValue>
+			</Register>
+			<Register>
+				<Name>LCV_03.UST15</Name>
+				<Addr>1050</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>2</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.UST15</RegFullName>
+				<RegsCount>1</RegsCount>
+				<Value>15</Value>
+				<DefValue>15</DefValue>
+			</Register>
+			<Register>
+				<Name>LCV_03.UST16</Name>
+				<Addr>1051</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>2</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>2</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.UST16</RegFullName>
+				<RegsCount>1</RegsCount>
+				<Value>16</Value>
+				<DefValue>16</DefValue>
+			</Register>
+			<Register>
+				<Name>LCV_03.UST3</Name>
+				<Addr>1038</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>2</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.LCV_03.UST3</RegFullName>
+				<RegsCount>1</RegsCount>
+				<Value>3</Value>
+				<DefValue>3</DefValue>
+			</Register>
+			<Register>
+				<Name>NGSV1.Temp.CMD</Name>
+				<Addr>1200</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>2</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>2</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.CMD</RegFullName>
 				<RegsCount>1</RegsCount>
 				<Value>1</Value>
-				<DefValue>0</DefValue>
+				<DefValue>1</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_17</Name>
-				<Addr>17</Addr>
+				<Name>NGSV1.Temp.ENABLE</Name>
+				<Addr>1201</Addr>
 				<BitAddr>0</BitAddr>
 				<vType>18</vType>
 				<Description>
@@ -411,45 +681,20 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
+				<WorkType>2</WorkType>
 				<DataFormat>2</DataFormat>
 				<Percent>0</Percent>
-				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_17</RegFullName>
-				<RegsCount>1</RegsCount>
-				<Value>0</Value>
-				<DefValue>0</DefValue>
-			</Register>
-			<Register>
-				<Name>Reg_18</Name>
-				<Addr>18</Addr>
-				<BitAddr>0</BitAddr>
-				<vType>18</vType>
-				<Description>
-				</Description>
-				<mSpace>0</mSpace>
-				<ConstGroupName>
-				</ConstGroupName>
-				<Group>
-				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
-				<DataFormat>2</DataFormat>
-				<Percent>0</Percent>
-				<Period>100</Period>
-				<RegFullName>Сервер.Устройство.Reg_18</RegFullName>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.ENABLE</RegFullName>
 				<RegsCount>1</RegsCount>
 				<Value>1</Value>
-				<DefValue>0</DefValue>
+				<DefValue>1</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_124</Name>
-				<Addr>124</Addr>
+				<Name>NGSV1.Temp.ENABLE_MSG</Name>
+				<Addr>1202</Addr>
 				<BitAddr>0</BitAddr>
-				<vType>5</vType>
+				<vType>18</vType>
 				<Description>
 				</Description>
 				<mSpace>0</mSpace>
@@ -457,23 +702,20 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Sin.Amplitude>60</Sin.Amplitude>
-				<Sin.Period>30000</Sin.Period>
-				<Sin.Offset>0</Sin.Offset>
-				<WorkType>3</WorkType>
-				<DataFormat>8</DataFormat>
+				<WorkType>2</WorkType>
+				<DataFormat>2</DataFormat>
 				<Percent>0</Percent>
 				<Period>1000</Period>
-				<RegFullName>Сервер.Устройство.Reg_124</RegFullName>
-				<RegsCount>4</RegsCount>
-				<Value>-1.92794482856407E-56</Value>
-				<DefValue>0</DefValue>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.ENABLE_MSG</RegFullName>
+				<RegsCount>1</RegsCount>
+				<Value>1</Value>
+				<DefValue>1</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_122</Name>
-				<Addr>122</Addr>
+				<Name>NGSV1.Temp.ArrUst_1</Name>
+				<Addr>1203</Addr>
 				<BitAddr>0</BitAddr>
-				<vType>5</vType>
+				<vType>4</vType>
 				<Description>
 				</Description>
 				<mSpace>0</mSpace>
@@ -481,23 +723,20 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Sin.Amplitude>60</Sin.Amplitude>
-				<Sin.Period>30000</Sin.Period>
-				<Sin.Offset>0</Sin.Offset>
-				<WorkType>3</WorkType>
-				<DataFormat>8</DataFormat>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
 				<Percent>0</Percent>
 				<Period>1000</Period>
-				<RegFullName>Сервер.Устройство.Reg_122</RegFullName>
-				<RegsCount>4</RegsCount>
-				<Value>40.4815749380442</Value>
-				<DefValue>0</DefValue>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_1</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>88</Value>
+				<DefValue>88</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_126</Name>
-				<Addr>126</Addr>
+				<Name>NGSV1.Temp.ArrUst_2</Name>
+				<Addr>1205</Addr>
 				<BitAddr>0</BitAddr>
-				<vType>5</vType>
+				<vType>4</vType>
 				<Description>
 				</Description>
 				<mSpace>0</mSpace>
@@ -505,23 +744,20 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Sin.Amplitude>60</Sin.Amplitude>
-				<Sin.Period>30000</Sin.Period>
-				<Sin.Offset>0</Sin.Offset>
-				<WorkType>3</WorkType>
-				<DataFormat>8</DataFormat>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
 				<Percent>0</Percent>
 				<Period>1000</Period>
-				<RegFullName>Сервер.Устройство.Reg_126</RegFullName>
-				<RegsCount>4</RegsCount>
-				<Value>-4.78491725423755E277</Value>
-				<DefValue>0</DefValue>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_2</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>1.22000002861023</Value>
+				<DefValue>1.22</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_128</Name>
-				<Addr>128</Addr>
+				<Name>NGSV1.Temp.ArrUst_3</Name>
+				<Addr>1207</Addr>
 				<BitAddr>0</BitAddr>
-				<vType>5</vType>
+				<vType>4</vType>
 				<Description>
 				</Description>
 				<mSpace>0</mSpace>
@@ -529,23 +765,20 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Sin.Amplitude>60</Sin.Amplitude>
-				<Sin.Period>30000</Sin.Period>
-				<Sin.Offset>0</Sin.Offset>
-				<WorkType>3</WorkType>
-				<DataFormat>8</DataFormat>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
 				<Percent>0</Percent>
 				<Period>1000</Period>
-				<RegFullName>Сервер.Устройство.Reg_128</RegFullName>
-				<RegsCount>4</RegsCount>
-				<Value>-67407576266.7971</Value>
-				<DefValue>0</DefValue>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_3</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>3.53999996185303</Value>
+				<DefValue>3.54</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_130</Name>
-				<Addr>130</Addr>
+				<Name>NGSV1.Temp.ArrUst_4</Name>
+				<Addr>1209</Addr>
 				<BitAddr>0</BitAddr>
-				<vType>5</vType>
+				<vType>4</vType>
 				<Description>
 				</Description>
 				<mSpace>0</mSpace>
@@ -553,23 +786,20 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Sin.Amplitude>60</Sin.Amplitude>
-				<Sin.Period>30000</Sin.Period>
-				<Sin.Offset>0</Sin.Offset>
-				<WorkType>3</WorkType>
-				<DataFormat>8</DataFormat>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
 				<Percent>0</Percent>
 				<Period>1000</Period>
-				<RegFullName>Сервер.Устройство.Reg_130</RegFullName>
-				<RegsCount>4</RegsCount>
-				<Value>-1.43380476380172E52</Value>
-				<DefValue>0</DefValue>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_4</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>2</Value>
+				<DefValue>2</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_134</Name>
-				<Addr>134</Addr>
+				<Name>NGSV1.Temp.ArrUst_5</Name>
+				<Addr>1211</Addr>
 				<BitAddr>0</BitAddr>
-				<vType>5</vType>
+				<vType>4</vType>
 				<Description>
 				</Description>
 				<mSpace>0</mSpace>
@@ -577,23 +807,20 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Sin.Amplitude>60</Sin.Amplitude>
-				<Sin.Period>30000</Sin.Period>
-				<Sin.Offset>0</Sin.Offset>
-				<WorkType>3</WorkType>
-				<DataFormat>8</DataFormat>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
 				<Percent>0</Percent>
 				<Period>1000</Period>
-				<RegFullName>Сервер.Устройство.Reg_134</RegFullName>
-				<RegsCount>4</RegsCount>
-				<Value>-1.30702462733818E127</Value>
-				<DefValue>0</DefValue>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_5</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>77</Value>
+				<DefValue>77</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_132</Name>
-				<Addr>132</Addr>
+				<Name>NGSV1.Temp.ArrUst_6</Name>
+				<Addr>1213</Addr>
 				<BitAddr>0</BitAddr>
-				<vType>5</vType>
+				<vType>4</vType>
 				<Description>
 				</Description>
 				<mSpace>0</mSpace>
@@ -601,23 +828,20 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Sin.Amplitude>60</Sin.Amplitude>
-				<Sin.Period>30000</Sin.Period>
-				<Sin.Offset>0</Sin.Offset>
-				<WorkType>3</WorkType>
-				<DataFormat>8</DataFormat>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
 				<Percent>0</Percent>
 				<Period>1000</Period>
-				<RegFullName>Сервер.Устройство.Reg_132</RegFullName>
-				<RegsCount>4</RegsCount>
-				<Value>46.1733029797492</Value>
-				<DefValue>0</DefValue>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_6</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>77</Value>
+				<DefValue>77</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_136</Name>
-				<Addr>136</Addr>
+				<Name>NGSV1.Temp.ArrUst_7</Name>
+				<Addr>1215</Addr>
 				<BitAddr>0</BitAddr>
-				<vType>5</vType>
+				<vType>4</vType>
 				<Description>
 				</Description>
 				<mSpace>0</mSpace>
@@ -625,23 +849,20 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Sin.Amplitude>60</Sin.Amplitude>
-				<Sin.Period>30000</Sin.Period>
-				<Sin.Offset>0</Sin.Offset>
-				<WorkType>3</WorkType>
-				<DataFormat>8</DataFormat>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
 				<Percent>0</Percent>
 				<Period>1000</Period>
-				<RegFullName>Сервер.Устройство.Reg_136</RegFullName>
-				<RegsCount>4</RegsCount>
-				<Value>1.13087010058365E171</Value>
-				<DefValue>0</DefValue>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_7</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>54</Value>
+				<DefValue>54</DefValue>
 			</Register>
 			<Register>
-				<Name>Reg_138</Name>
-				<Addr>138</Addr>
+				<Name>NGSV1.Temp.ArrUst_8</Name>
+				<Addr>1217</Addr>
 				<BitAddr>0</BitAddr>
-				<vType>5</vType>
+				<vType>4</vType>
 				<Description>
 				</Description>
 				<mSpace>0</mSpace>
@@ -649,17 +870,98 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Sin.Amplitude>60</Sin.Amplitude>
-				<Sin.Period>30000</Sin.Period>
-				<Sin.Offset>0</Sin.Offset>
-				<WorkType>3</WorkType>
-				<DataFormat>8</DataFormat>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
 				<Percent>0</Percent>
 				<Period>1000</Period>
-				<RegFullName>Сервер.Устройство.Reg_138</RegFullName>
-				<RegsCount>4</RegsCount>
-				<Value>38.6627315817066</Value>
-				<DefValue>0</DefValue>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_8</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>64</Value>
+				<DefValue>64</DefValue>
+			</Register>
+			<Register>
+				<Name>NGSV1.Temp.ArrUst_9</Name>
+				<Addr>1219</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>4</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_9</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>65</Value>
+				<DefValue>65</DefValue>
+			</Register>
+			<Register>
+				<Name>NGSV1.Temp.ArrUst_10</Name>
+				<Addr>1221</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>4</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_10</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>56</Value>
+				<DefValue>56</DefValue>
+			</Register>
+			<Register>
+				<Name>NGSV1.Temp.ArrUst_11</Name>
+				<Addr>1223</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>4</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_11</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>54</Value>
+				<DefValue>54</DefValue>
+			</Register>
+			<Register>
+				<Name>NGSV1.Temp.ArrUst_12</Name>
+				<Addr>1225</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>4</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>1000</Period>
+				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_12</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>2.64599990844727</Value>
+				<DefValue>2.646</DefValue>
 			</Register>
 		</Device>
 	</Server>
