@@ -43,15 +43,13 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
+				<WorkType>2</WorkType>
 				<DataFormat>2</DataFormat>
 				<Percent>0</Percent>
 				<Period>100</Period>
 				<RegFullName>Сервер.Устройство.LCV_03.State</RegFullName>
 				<RegsCount>1</RegsCount>
-				<Value>1</Value>
+				<Value>0</Value>
 				<DefValue>0</DefValue>
 			</Register>
 			<Register>
@@ -66,9 +64,7 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
+				<WorkType>2</WorkType>
 				<DataFormat>2</DataFormat>
 				<Percent>0</Percent>
 				<Period>100</Period>
@@ -89,9 +85,7 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Min>0</Min>
-				<Max>1</Max>
-				<WorkType>1</WorkType>
+				<WorkType>2</WorkType>
 				<DataFormat>2</DataFormat>
 				<Percent>0</Percent>
 				<Period>100</Period>
@@ -118,7 +112,7 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.Hyst</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>6</Value>
+				<Value>0</Value>
 				<DefValue>6</DefValue>
 			</Register>
 			<Register>
@@ -139,8 +133,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.CoeffT</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>1.33299994468689</Value>
-				<DefValue>1,333</DefValue>
+				<Value>0</Value>
+				<DefValue>1</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.Imit</Name>
@@ -160,7 +154,7 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.Imit</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>64</Value>
+				<Value>0</Value>
 				<DefValue>64</DefValue>
 			</Register>
 			<Register>
@@ -181,8 +175,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.MaxEng</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>75.5500030517578</Value>
-				<DefValue>75,55</DefValue>
+				<Value>0</Value>
+				<DefValue>75</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.MinEng</Name>
@@ -202,8 +196,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.MinEng</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>1.99000000953674</Value>
-				<DefValue>1,99</DefValue>
+				<Value>0</Value>
+				<DefValue>1</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.MinSens</Name>
@@ -223,8 +217,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.MinSens</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>1.25</Value>
-				<DefValue>1,25</DefValue>
+				<Value>0</Value>
+				<DefValue>1</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.MaxSens</Name>
@@ -244,8 +238,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.MaxSens</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>12.3299999237061</Value>
-				<DefValue>12,33</DefValue>
+				<Value>0</Value>
+				<DefValue>12</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.MaxObkz</Name>
@@ -265,8 +259,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.MaxObkz</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>70.5</Value>
-				<DefValue>70,5</DefValue>
+				<Value>0</Value>
+				<DefValue>70</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.MinObkz</Name>
@@ -286,8 +280,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.MinObkz</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>1.23000001907349</Value>
-				<DefValue>1,23</DefValue>
+				<Value>0</Value>
+				<DefValue>1</DefValue>
 			</Register>
 			<Register>
 				<Name>LCV_03.cmd</Name>
@@ -301,15 +295,13 @@
 				</ConstGroupName>
 				<Group>
 				</Group>
-				<Min>0</Min>
-				<Max>50</Max>
-				<WorkType>1</WorkType>
+				<WorkType>2</WorkType>
 				<DataFormat>2</DataFormat>
 				<Percent>0</Percent>
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.LCV_03.cmd</RegFullName>
 				<RegsCount>1</RegsCount>
-				<Value>30</Value>
+				<Value>0</Value>
 				<DefValue>0</DefValue>
 			</Register>
 			<Register>
@@ -751,7 +743,7 @@
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_2</RegFullName>
 				<RegsCount>2</RegsCount>
 				<Value>1.22000002861023</Value>
-				<DefValue>1.22</DefValue>
+				<DefValue>1.22000002861023</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.ArrUst_3</Name>
@@ -772,7 +764,7 @@
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_3</RegFullName>
 				<RegsCount>2</RegsCount>
 				<Value>3.53999996185303</Value>
-				<DefValue>3.54</DefValue>
+				<DefValue>3.53999996185303</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.ArrUst_4</Name>
@@ -961,7 +953,7 @@
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_12</RegFullName>
 				<RegsCount>2</RegsCount>
 				<Value>2.64599990844727</Value>
-				<DefValue>2.646</DefValue>
+				<DefValue>2.64599990844727</DefValue>
 			</Register>
 		</Device>
 	</Server>
