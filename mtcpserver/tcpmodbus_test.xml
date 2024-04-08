@@ -113,7 +113,7 @@
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.Hyst</RegFullName>
 				<RegsCount>2</RegsCount>
 				<Value>0</Value>
-				<DefValue>6</DefValue>
+				<DefValue>0</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.CoeffT</Name>
@@ -134,7 +134,7 @@
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.CoeffT</RegFullName>
 				<RegsCount>2</RegsCount>
 				<Value>0</Value>
-				<DefValue>1</DefValue>
+				<DefValue>0</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.Imit</Name>
@@ -155,7 +155,7 @@
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.Imit</RegFullName>
 				<RegsCount>2</RegsCount>
 				<Value>0</Value>
-				<DefValue>64</DefValue>
+				<DefValue>0</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.MaxEng</Name>
@@ -175,8 +175,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.MaxEng</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>100</Value>
-				<DefValue>75</DefValue>
+				<Value>300</Value>
+				<DefValue>300</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.MinEng</Name>
@@ -196,8 +196,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.MinEng</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>0</Value>
-				<DefValue>1</DefValue>
+				<Value>-150</Value>
+				<DefValue>-150</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.MinSens</Name>
@@ -217,8 +217,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.MinSens</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>100</Value>
-				<DefValue>1</DefValue>
+				<Value>0</Value>
+				<DefValue>0</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.MaxSens</Name>
@@ -239,7 +239,7 @@
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.MaxSens</RegFullName>
 				<RegsCount>2</RegsCount>
 				<Value>0</Value>
-				<DefValue>12</DefValue>
+				<DefValue>0</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.MaxObkz</Name>
@@ -259,8 +259,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.MaxObkz</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>100</Value>
-				<DefValue>70</DefValue>
+				<Value>0</Value>
+				<DefValue>0</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.MinObkz</Name>
@@ -281,7 +281,7 @@
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.MinObkz</RegFullName>
 				<RegsCount>2</RegsCount>
 				<Value>0</Value>
-				<DefValue>1</DefValue>
+				<DefValue>0</DefValue>
 			</Register>
 			<Register>
 				<Name>LCV_03.cmd</Name>
@@ -301,7 +301,7 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.LCV_03.cmd</RegFullName>
 				<RegsCount>1</RegsCount>
-				<Value>1</Value>
+				<Value>0</Value>
 				<DefValue>0</DefValue>
 			</Register>
 			<Register>
@@ -659,7 +659,7 @@
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.CMD</RegFullName>
 				<RegsCount>1</RegsCount>
 				<Value>0</Value>
-				<DefValue>1</DefValue>
+				<DefValue>0</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.ENABLE</Name>
@@ -680,7 +680,7 @@
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.ENABLE</RegFullName>
 				<RegsCount>1</RegsCount>
 				<Value>0</Value>
-				<DefValue>1</DefValue>
+				<DefValue>0</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.ENABLE_MSG</Name>
@@ -701,7 +701,7 @@
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.ENABLE_MSG</RegFullName>
 				<RegsCount>1</RegsCount>
 				<Value>0</Value>
-				<DefValue>1</DefValue>
+				<DefValue>0</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.ArrUst_1</Name>
@@ -721,8 +721,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_1</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>88</Value>
-				<DefValue>88</DefValue>
+				<Value>0</Value>
+				<DefValue>0</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.ArrUst_2</Name>
@@ -742,8 +742,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_2</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>1.21875</Value>
-				<DefValue>1.22000002861023</DefValue>
+				<Value>15</Value>
+				<DefValue>15</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.ArrUst_3</Name>
@@ -763,8 +763,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_3</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>3.53125</Value>
-				<DefValue>3.53999996185303</DefValue>
+				<Value>0</Value>
+				<DefValue>0</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.ArrUst_4</Name>
@@ -784,8 +784,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_4</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>2</Value>
-				<DefValue>2</DefValue>
+				<Value>0</Value>
+				<DefValue>0</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.ArrUst_5</Name>
@@ -910,8 +910,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_10</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>56</Value>
-				<DefValue>56</DefValue>
+				<Value>0</Value>
+				<DefValue>0</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.ArrUst_11</Name>
@@ -931,8 +931,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_11</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>54</Value>
-				<DefValue>54</DefValue>
+				<Value>150</Value>
+				<DefValue>150</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.ArrUst_12</Name>
@@ -952,8 +952,8 @@
 				<Period>1000</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.ArrUst_12</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>2.64599990844727</Value>
-				<DefValue>2.64599990844727</DefValue>
+				<Value>200</Value>
+				<DefValue>200</DefValue>
 			</Register>
 			<Register>
 				<Name>NGSV1.Temp.Val</Name>
@@ -973,7 +973,7 @@
 				<Period>100</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.Val</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>123</Value>
+				<Value>172</Value>
 				<DefValue>0</DefValue>
 			</Register>
 			<Register>
@@ -1057,7 +1057,7 @@
 				<Period>100</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.Alarm</RegFullName>
 				<RegsCount>1</RegsCount>
-				<Value>0</Value>
+				<Value>2048</Value>
 				<DefValue>0</DefValue>
 			</Register>
 		</Device>
