@@ -973,7 +973,7 @@
 				<Period>100</Period>
 				<RegFullName>Сервер.Устройство.NGSV1.Temp.Val</RegFullName>
 				<RegsCount>2</RegsCount>
-				<Value>0</Value>
+				<Value>66</Value>
 				<DefValue>0</DefValue>
 			</Register>
 			<Register>
@@ -1078,7 +1078,7 @@
 				<Period>100</Period>
 				<RegFullName>Сервер.Устройство.Pump4.State</RegFullName>
 				<RegsCount>1</RegsCount>
-				<Value>32</Value>
+				<Value>0</Value>
 				<DefValue>0</DefValue>
 			</Register>
 			<Register>
@@ -1099,7 +1099,7 @@
 				<Period>100</Period>
 				<RegFullName>Сервер.Устройство.Pump4.Mode</RegFullName>
 				<RegsCount>1</RegsCount>
-				<Value>2</Value>
+				<Value>0</Value>
 				<DefValue>0</DefValue>
 			</Register>
 			<Register>
@@ -1331,6 +1331,27 @@
 				<RegFullName>Сервер.Устройство.Pump4.UST_10</RegFullName>
 				<RegsCount>1</RegsCount>
 				<Value>0</Value>
+				<DefValue>0</DefValue>
+			</Register>
+			<Register>
+				<Name>MGNOV_RASHOD</Name>
+				<Addr>292</Addr>
+				<BitAddr>0</BitAddr>
+				<vType>4</vType>
+				<Description>
+				</Description>
+				<mSpace>0</mSpace>
+				<ConstGroupName>
+				</ConstGroupName>
+				<Group>
+				</Group>
+				<WorkType>2</WorkType>
+				<DataFormat>4</DataFormat>
+				<Percent>0</Percent>
+				<Period>100</Period>
+				<RegFullName>Сервер.Устройство.MGNOV_RASHOD</RegFullName>
+				<RegsCount>2</RegsCount>
+				<Value>2</Value>
 				<DefValue>0</DefValue>
 			</Register>
 		</Device>
